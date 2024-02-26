@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = 'Raffyta'.toUpperCase()
@@ -15,6 +16,7 @@ function App() {
       <p>Olá {name}</p>
       <p>Soma: {sum(3,6)}</p>
       <img src={url} alt="Imagem aleatória"/>
+      <HelloWorld/>
     </div>
   );
 }
