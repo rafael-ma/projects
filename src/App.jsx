@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
 
 function App() {
   const name = 'Raffyta'.toUpperCase()
@@ -15,11 +16,13 @@ function App() {
   const nome = 'Calabreso'
   return (
     <div className="App">
-      <h1>Procesando JSX</h1>
+      <h1>Testando CSS</h1>
       <p>Olá {name}</p>
       <p>Soma: {sum(3,6)}</p>
       <img src={url} alt="Imagem aleatória"/>
       <HelloWorld/>
+      <Frase />
+      <Frase /> 
       <SayMyName nome='Raffyta' />
       <SayMyName nome={nome} />
 
@@ -29,6 +32,7 @@ function App() {
         idade = '19'     
         profissao = 'Trainee' 
       />
+
     </div>
   );
 }
